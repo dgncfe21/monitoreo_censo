@@ -1,4 +1,5 @@
 
+
 // Replace your Configuration here..
 // var config = {
 //     apiKey: "AIzaSyCKp-RwlkZhJBehZLOSLhn1E7WpoXn9xoI",
@@ -10,23 +11,23 @@
 // };
 
 const config = {
-  //    apiKey: "AIzaSyAipb6Ni6eoEpWm5Wp5VOZNyo1ZQed2tqU",
-  // authDomain: "anomservicio.firebaseapp.com",
-  // databaseURL: "https://anomservicio.firebaseio.com",
-  // projectId: "anomservicio",
-  // storageBucket: "anomservicio.appspot.com",
-  // messagingSenderId: "692504140235",
-  // appId: "1:692504140235:web:0dda5e06fd75695f6cfe4e",
-  // measurementId: "G-45WTJ4FVZH"
+     apiKey: "AIzaSyAipb6Ni6eoEpWm5Wp5VOZNyo1ZQed2tqU",
+  authDomain: "anomservicio.firebaseapp.com",
+  databaseURL: "https://anomservicio.firebaseio.com",
+  projectId: "anomservicio",
+  storageBucket: "anomservicio.appspot.com",
+  messagingSenderId: "692504140235",
+  appId: "1:692504140235:web:0dda5e06fd75695f6cfe4e",
+  measurementId: "G-45WTJ4FVZH"
 
-  apiKey: "AIzaSyBRVBJuvk-Mbxzv2DTx2a18jPaope7gBPY",
-  authDomain: "usrsmty.firebaseapp.com",
-  databaseURL: "https://usrsmty.firebaseio.com",
-  projectId: "usrsmty",
-  storageBucket: "usrsmty.appspot.com",
-  messagingSenderId: "840900135873",
-  appId: "1:840900135873:web:cbcc627858630c625ebd40",
-  measurementId: "G-47LEFJRJCX"
+  // apiKey: "AIzaSyBRVBJuvk-Mbxzv2DTx2a18jPaope7gBPY",
+  // authDomain: "usrsmty.firebaseapp.com",
+  // databaseURL: "https://usrsmty.firebaseio.com",
+  // projectId: "usrsmty",
+  // storageBucket: "usrsmty.appspot.com",
+  // messagingSenderId: "840900135873",
+  // appId: "1:840900135873:web:cbcc627858630c625ebd40",
+  // measurementId: "G-47LEFJRJCX"
 
 
 };
@@ -223,10 +224,10 @@ function flyToStore(currentFeature) {
 }
 
 // get firebase database reference...
-var cars_Ref = firebase.database().ref('/LAMPARAS_E1_test');
+var cars_Ref = firebase.database().ref('/LAMPARAS_E1_test_v2');
 
 
-var dataConductores = firebase.database().ref('/LAMPARAS_E1_test');
+var dataConductores = firebase.database().ref('/LAMPARAS_E1_test_v2');
 dataConductores.on('value', function (snapshot) {
     //updateStarCount(postElement, snapshot.val());
 
@@ -328,7 +329,7 @@ function AddPedido(data) {
 
 
 
-var pedidos_Ref = firebase.database().ref('/RPUMEDIDOR_test_E1');
+var pedidos_Ref = firebase.database().ref('/RPUMEDIDOR_test_E1_v2');
 
 // this event will be triggered when a new object will be added in the database...
 pedidos_Ref.on('child_added', function (data) {
